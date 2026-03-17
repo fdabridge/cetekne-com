@@ -129,7 +129,7 @@ export default async function BlogOGImage({
             </span>
           </div>
           <div style={{ color: "rgba(255,255,255,0.35)", fontSize: 16 }}>
-            IFC Global Ortağı
+            AB Yetkili Notified Body
           </div>
         </div>
       </div>

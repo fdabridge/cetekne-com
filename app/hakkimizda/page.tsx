@@ -5,9 +5,9 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Shield, Award, Users, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda | IFC Global Türkiye CE Belgelendirme Ortağı",
+  title: "Hakkımızda | AB Yetkili Notified Body CE Belgelendirme",
   description:
-    "IFC Global'in Türkiye'deki yetkili CE belgelendirme ortağıyız. Uzman mühendis kadromuzla tekne sahiplerine profesyonel belgelendirme hizmeti sunuyoruz.",
+    "Avrupa Birliği tarafından yetkilendirilmiş Notified Body ile çalışan CE belgelendirme uzmanlarıyız. Uzman mühendis kadromuzla tekne sahiplerine 2013/53/AB Direktifi kapsamında profesyonel belgelendirme hizmeti sunuyoruz.",
   alternates: { canonical: "https://cetekne.com/hakkimizda" },
 };
 
@@ -19,10 +19,10 @@ const stats = [
 ];
 
 const values = [
-  { icon: Shield, title: "Güvenilirlik", desc: "Uluslararası akreditasyona sahip Notified Body ile çalışarak en yüksek standartlarda hizmet sunuyoruz." },
+  { icon: Shield, title: "Güvenilirlik", desc: "Avrupa Birliği tarafından yetkilendirilmiş Notified Body ile çalışarak 2013/53/AB Direktifi standartlarında hizmet sunuyoruz." },
   { icon: Award, title: "Uzmanlık", desc: "Deniz mühendisliği alanında uzman kadromuzla teknik dosya hazırlama ve belgelendirme süreçlerini yönetiyoruz." },
   { icon: Users, title: "Müşteri Odaklılık", desc: "Her tekne sahibine özel çözümler sunarak sürecin her aşamasında yanlarında oluyoruz." },
-  { icon: Globe, title: "Uluslararası Ağ", desc: "IFC Global ortağı olarak dünya genelinde geçerli CE belgelendirme hizmeti sağlıyoruz." },
+  { icon: Globe, title: "Uluslararası Ağ", desc: "AB yetkili Notified Body ağı ile dünya genelinde geçerli CE belgelendirme hizmeti sağlıyoruz." },
 ];
 
 export default function HakkimizdaPage() {
@@ -37,9 +37,9 @@ export default function HakkimizdaPage() {
         <Container>
           <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Hakkımızda</h1>
           <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
-            IFC Global&apos;in Türkiye&apos;deki yetkili CE belgelendirme ortağı olarak, 24 metre altı gezi tekneleri için
-            kapsamlı belgelendirme hizmetleri sunuyoruz. Uzman mühendis kadromuz ve uluslararası deneyimimizle
-            teknenizin AB pazarına uygunluğunu sağlıyoruz.
+            Avrupa Birliği tarafından yetkilendirilmiş Notified Body ile iş birliği yapan CE belgelendirme uzmanlarıyız.
+            24 metre altı gezi tekneleri için 2013/53/AB Direktifi kapsamında kapsamlı belgelendirme hizmetleri sunuyoruz.
+            Uzman mühendis kadromuz ve uluslararası deneyimimizle teknenizin AB pazarına uygunluğunu sağlıyoruz.
           </p>
         </Container>
       </section>
@@ -76,14 +76,15 @@ export default function HakkimizdaPage() {
         </Container>
       </section>
 
-      {/* IFC Global */}
+      {/* Notified Body */}
       <section className="bg-white py-16 sm:py-20">
         <Container>
-          <h2 className="text-2xl font-bold text-text-primary sm:text-3xl">IFC Global Ortaklığı</h2>
+          <h2 className="text-2xl font-bold text-text-primary sm:text-3xl">AB Yetkili Notified Body</h2>
           <p className="mt-4 max-w-2xl text-text-muted leading-relaxed">
-            IFC Global, uluslararası akreditasyona sahip bir uygunluk değerlendirme kuruluşudur. Gezi tekneleri
-            için Notified Body olarak hizmet veren IFC Global ile ortaklığımız, müşterilerimize dünya standartlarında
-            CE belgelendirme hizmeti sunmamızı sağlamaktadır.
+            Notified Body, Avrupa Birliği tarafından 2013/53/AB Gezi Tekneleri Direktifi kapsamında yetkilendirilmiş
+            bağımsız uygunluk değerlendirme kuruluşudur. CE belgesi yalnızca AB yetkili bir Notified Body aracılığıyla
+            alınabilir. Biz, AB yetkili Notified Body ile doğrudan çalışarak müşterilerimize güvenilir ve AB pazarında
+            tam geçerli belgelendirme hizmeti sunuyoruz.
           </p>
           <Button href="/iletisim" size="lg" className="mt-6">Bizimle Çalışın</Button>
         </Container>

@@ -62,12 +62,12 @@ export default function OGImage() {
           }}
         >
           24 metre altı gezi tekneleri için AB uygunluk belgelendirmesi.
-          IFC Global ortağı.
+          Avrupa Birliği yetkili Notified Body.
         </div>
 
         {/* Trust row */}
         <div style={{ display: "flex", gap: 32 }}>
-          {["2013/53/AB Uyumlu", "IFC Global Ortağı", "Hızlı Süreç"].map(
+          {["2013/53/AB Direktifi", "AB Yetkili Notified Body", "Hızlı Süreç"].map(
             (label) => (
               <div
                 key={label}

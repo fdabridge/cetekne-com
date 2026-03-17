@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const ceSteps = [
   { icon: FileText, title: "Başvuru ve Ön Değerlendirme", desc: "Tekne bilgilerinizi paylaşın, ekibimiz uygunluk değerlendirmesi yapar." },
   { icon: Shield, title: "Teknik İnceleme ve Testler", desc: "Stabilite hesaplamaları, yapısal testler ve teknik dosya hazırlanır." },
-  { icon: Anchor, title: "Notified Body Denetimi", desc: "Akredite kuruluş tarafından denetim ve onay süreci yürütülür." },
+  { icon: Anchor, title: "Notified Body Denetimi", desc: "AB yetkili Notified Body tarafından denetim ve onay süreci yürütülür." },
   { icon: CheckCircle, title: "CE Belgesi Teslimi", desc: "Uygunluk Beyanı düzenlenir ve CE işareti tekneye uygulanır." },
 ];
 

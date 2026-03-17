@@ -16,7 +16,7 @@ export const services: Service[] = [
     title: "Yeni Üretim Tekne CE Belgesi",
     shortTitle: "Yeni Üretim CE",
     description: "Tasarım aşamasından başlayarak yeni üretim tekneler için eksiksiz CE belgelendirme süreci.",
-    metaDescription: "Yeni üretim tekneler için CE belgesi alma süreci. Tasarımdan deneme seferine kadar tüm adımları IFC Global ortağı olarak yönetiyoruz.",
+    metaDescription: "Yeni üretim tekneler için CE belgesi alma süreci. Tasarımdan deneme seferine kadar tüm adımları AB yetkili Notified Body ile 2013/53/AB Direktifi kapsamında yönetiyoruz.",
     icon: "Ship",
     features: [
       "Tasarım aşamasında teknik danışmanlık",
@@ -36,7 +36,7 @@ export const services: Service[] = [
     ],
     content: `Yeni üretim bir tekne için CE belgesi almak, teknenin tasarım aşamasından itibaren 2013/53/AB Gezi Tekneleri Direktifi'ne uygun şekilde geliştirilmesini gerektirir. Bu süreç, teknenin AB pazarında yasal olarak satılabilmesi için zorunludur.
 
-IFC Global ortağı olarak, tekne üreticilerine tasarım aşamasından CE belgesi teslimine kadar tüm süreci yönetiyoruz. Stabilite hesaplamalarından teknik dosya hazırlığına, Notified Body koordinasyonundan deneme seferine kadar her adımda yanınızdayız.
+AB yetkili Notified Body ile iş birliği yaparak, tekne üreticilerine tasarım aşamasından CE belgesi teslimine kadar tüm süreci yönetiyoruz. Stabilite hesaplamalarından teknik dosya hazırlığına, Notified Body koordinasyonundan deneme seferine kadar her adımda yanınızdayız.
 
 24 metre altı gezi tekneleri için CE belgelendirme sürecimiz ortalama 4-8 hafta içinde tamamlanır. Süre, teknenin karmaşıklığına ve mevcut dokümantasyon durumuna göre değişebilir.`,
   },
@@ -92,7 +92,7 @@ Süreç, teknenin mevcut durumunun detaylı incelenmesiyle başlar. Gap analizi 
     ],
     content: `Türkiye'den AB ülkelerine tekne ihraç etmek isteyen üreticiler için CE belgesi zorunludur. 2013/53/AB Direktifi kapsamında, AB pazarına giren her gezi teknesinin CE işareti taşıması gerekir.
 
-İhracat sürecinde sadece CE belgesi değil, hedef ülkenin spesifik gereksinimleri, gümrük dokümantasyonu ve teknik dosyanın uygun dilde hazırlanması da kritik öneme sahiptir. IFC Global olarak tüm bu süreci tek elden yönetiyoruz.`,
+İhracat sürecinde sadece CE belgesi değil, hedef ülkenin spesifik gereksinimleri, gümrük dokümantasyonu ve teknik dosyanın uygun dilde hazırlanması da kritik öneme sahiptir. AB yetkili Notified Body ile birlikte tüm bu süreci tek elden yönetiyoruz.`,
   },
   {
     slug: "pca-post-construction-assessment",

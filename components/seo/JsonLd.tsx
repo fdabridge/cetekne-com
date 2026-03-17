@@ -17,19 +17,19 @@ export function OrganizationJsonLd() {
       data={{
         "@context": "https://schema.org",
         "@type": "Organization",
-        name: "CEtekne - IFC Global",
+        name: "cetekne.com",
         url: "https://cetekne.com",
         logo: "https://cetekne.com/logo.svg",
         description:
-          "24 metre altı gezi tekneleri için CE belgelendirme hizmeti. IFC Global ortağı.",
+          "Avrupa Birliği yetkili Notified Body ile 24 metre altı gezi tekneleri için CE belgelendirme hizmeti. 2013/53/AB Direktifi kapsamında.",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "İstanbul",
+          addressLocality: "İzmir",
           addressCountry: "TR",
         },
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+90-212-000-0000",
+          telephone: "+90-507-941-3909",
           contactType: "customer service",
           availableLanguage: "Turkish",
         },
@@ -73,7 +73,7 @@ export function ServiceJsonLd({
         url,
         provider: {
           "@type": "Organization",
-          name: "CEtekne - IFC Global",
+          name: "cetekne.com",
           url: "https://cetekne.com",
         },
         areaServed: { "@type": "Place", name: "Türkiye" },
@@ -134,7 +134,7 @@ export function ArticleJsonLd({
         author: { "@type": "Organization", name: author },
         publisher: {
           "@type": "Organization",
-          name: "CEtekne - IFC Global",
+          name: "cetekne.com",
           url: "https://cetekne.com",
         },
         inLanguage: "tr",

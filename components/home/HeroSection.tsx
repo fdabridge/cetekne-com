@@ -3,10 +3,10 @@ import { Container } from "@/components/ui/Container";
 import { Shield, Award, Clock, FileCheck } from "lucide-react";
 
 const trustItems = [
-  { icon: Shield, label: "Akredite Kuruluş" },
-  { icon: Award, label: "IFC Global Ortağı" },
+  { icon: Shield, label: "AB Yetkili Notified Body" },
+  { icon: Award, label: "2013/53/AB Direktifi" },
   { icon: Clock, label: "Hızlı Süreç" },
-  { icon: FileCheck, label: "2013/53/AB Uyumlu" },
+  { icon: FileCheck, label: "AB Pazarına Uygunluk" },
 ];
 
 export function HeroSection() {
@@ -21,9 +21,9 @@ export function HeroSection() {
               <span className="text-accent">Her Şeyi Biz Hallederiz.</span>
             </h1>
             <p className="mt-5 text-lg text-text-muted leading-relaxed">
-              IFC Global ortağı olarak teknenizin AB pazarına çıkışını
-              sağlıyoruz. Başvurudan belge teslimine kadar tüm süreci
-              yönetiyoruz.
+              Avrupa Birliği tarafından yetkilendirilmiş Notified Body ile
+              teknenizin AB pazarına çıkışını sağlıyoruz. Başvurudan belge
+              teslimine kadar tüm süreci yönetiyoruz.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href="/iletisim" size="lg">

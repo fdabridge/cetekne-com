@@ -4,15 +4,15 @@ import { Shield, Award, Clock, BookOpen } from "lucide-react";
 const trustItems = [
   {
     icon: Shield,
-    label: "Akredite Kuruluş",
-    description: "Uluslararası akreditasyona sahip Notified Body ile çalışıyoruz.",
-    stat: "ISO 17065",
+    label: "AB Yetkili Notified Body",
+    description: "2013/53/AB Direktifi kapsamında Avrupa Birliği tarafından yetkilendirilmiş Notified Body ile çalışıyoruz.",
+    stat: "Notified Body",
   },
   {
     icon: Award,
-    label: "IFC Global Ortağı",
-    description: "IFC Global'in Türkiye'deki yetkili CE belgelendirme ortağıyız.",
-    stat: "Yetkili Ortak",
+    label: "AB Direktifi Uzmanı",
+    description: "2013/53/AB Gezi Tekneleri Direktifi kapsamında yetkili CE belgelendirme hizmeti sunuyoruz.",
+    stat: "2013/53/AB",
   },
   {
     icon: Clock,

@@ -32,9 +32,9 @@ export function Footer() {
               <Image src="/logo-white.svg" alt="cetekne.com" width={160} height={40} />
             </Link>
             <p className="mt-3 text-sm text-white/70 leading-relaxed">
-              IFC Global ortağı olarak 24 metre altı gezi tekneleri için CE belgelendirme
-              hizmeti sunuyoruz. 2013/53/AB Direktifi kapsamında teknenizi AB pazarına
-              hazırlıyoruz.
+              Avrupa Birliği tarafından yetkilendirilmiş Notified Body ile 24 metre altı
+              gezi tekneleri için CE belgelendirme hizmeti sunuyoruz. 2013/53/AB Direktifi
+              kapsamında teknenizi AB pazarına hazırlıyoruz.
             </p>
           </div>
 
@@ -83,8 +83,8 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-white/70">
               <li>info@cetekne.com</li>
-              <li>+90 (212) 000 00 00</li>
-              <li>İstanbul, Türkiye</li>
+              <li><a href="tel:+905079413909" className="hover:text-white transition-colors">+90 507 941 39 09</a></li>
+              <li>İzmir, Türkiye</li>
             </ul>
           </div>
         </div>

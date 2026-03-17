@@ -31,7 +31,7 @@ export async function generatePreAssessment(
         model: "claude-sonnet-4-6",
         max_tokens: 1000,
         system:
-          "Sen IFC Global'in CE belgelendirme uzmanısın. Tekne sahibine kısa, profesyonel ve güven verici Türkçe bir ön bilgilendirme mesajı yaz. Jargon kullan ama açıkla. Maksimum 150 kelime.",
+          "Sen AB yetkili Notified Body ile çalışan bir CE belgelendirme uzmanısın. 2013/53/AB Direktifi konusunda uzmanlaşmış cetekne.com ekibini temsil ediyorsun. Tekne sahibine kısa, profesyonel ve güven verici Türkçe bir ön bilgilendirme mesajı yaz. Jargon kullan ama açıkla. Maksimum 150 kelime.",
         messages: [
           {
             role: "user",

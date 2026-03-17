@@ -10,7 +10,7 @@ import { Ship, Anchor, Globe, ClipboardCheck, FileText, Calculator } from "lucid
 export const metadata: Metadata = {
   title: "Hizmetlerimiz | Tekne CE Belgelendirme Hizmetleri",
   description:
-    "Yeni üretim ve mevcut tekneler için CE belgelendirme, PCA, teknik dosya hazırlama ve stabilite hesaplama hizmetleri. IFC Global ortağı olarak profesyonel çözümler.",
+    "Yeni üretim ve mevcut tekneler için CE belgelendirme, PCA, teknik dosya hazırlama ve stabilite hesaplama hizmetleri. AB yetkili Notified Body ile 2013/53/AB Direktifi kapsamında profesyonel çözümler.",
   alternates: { canonical: "https://cetekne.com/hizmetler" },
 };
 
@@ -32,7 +32,7 @@ export default function HizmetlerPage() {
             CE Belgelendirme Hizmetlerimiz
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
-            IFC Global ortağı olarak 24 metre altı gezi tekneleri için kapsamlı CE belgelendirme hizmetleri sunuyoruz.
+            Avrupa Birliği yetkili Notified Body ile 2013/53/AB Direktifi kapsamında 24 metre altı gezi tekneleri için kapsamlı CE belgelendirme hizmetleri sunuyoruz.
           </p>
         </Container>
       </section>

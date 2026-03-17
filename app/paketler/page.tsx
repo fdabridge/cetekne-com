@@ -22,7 +22,7 @@ const packages = [
       "Teknik ön inceleme",
       "2013/53/AB direktif revizyonu",
       "Belge takibi ve koordinasyon",
-      "IFC Global onay süreci",
+      "Notified Body onay süreci",
       "E-posta destek",
     ],
   },
@@ -68,7 +68,7 @@ export default function PaketlerPage() {
         <Container>
           <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">CE Belgelendirme Paketleri</h1>
           <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
-            İhtiyacınıza uygun paketi seçin. Tüm paketler IFC Global ortaklığı kapsamında sunulmaktadır.
+            İhtiyacınıza uygun paketi seçin. Tüm paketler Avrupa Birliği yetkili Notified Body güvencesiyle sunulmaktadır.
           </p>
         </Container>
       </section>

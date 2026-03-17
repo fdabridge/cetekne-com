@@ -108,7 +108,7 @@ export default function IletisimPage() {
                   <Phone size={20} className="mt-0.5 shrink-0 text-accent" />
                   <div>
                     <h3 className="text-sm font-semibold text-text-primary">Telefon</h3>
-                    <p className="mt-1 text-sm text-text-muted">+90 (212) 000 00 00</p>
+                    <a href="tel:+905079413909" className="mt-1 text-sm text-text-muted hover:text-accent">+90 507 941 39 09</a>
                   </div>
                 </div>
               </Card>
@@ -117,7 +117,7 @@ export default function IletisimPage() {
                   <MapPin size={20} className="mt-0.5 shrink-0 text-accent" />
                   <div>
                     <h3 className="text-sm font-semibold text-text-primary">Adres</h3>
-                    <p className="mt-1 text-sm text-text-muted">İstanbul, Türkiye</p>
+                    <p className="mt-1 text-sm text-text-muted">İzmir, Türkiye</p>
                   </div>
                 </div>
               </Card>

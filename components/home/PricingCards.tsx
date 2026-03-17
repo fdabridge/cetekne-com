@@ -13,7 +13,7 @@ const packages = [
       "Teknik inceleme",
       "AB direktif revizyonu",
       "Belge takibi",
-      "IFC Global onay",
+      "Notified Body onayı",
     ],
   },
   {

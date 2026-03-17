@@ -23,16 +23,17 @@ export const metadata: Metadata = {
     template: "%s | cetekne.com",
   },
   description:
-    "24 metre altı gezi tekneleri için CE belgesi hizmeti. IFC Global ortağı olarak teknenizin AB pazarına uygunluk belgelendirmesini sağlıyoruz.",
+    "24 metre altı gezi tekneleri için CE belgesi hizmeti. Avrupa Birliği yetkili Notified Body ile 2013/53/AB Direktifi kapsamında teknenizin AB pazarına uygunluk belgelendirmesini sağlıyoruz.",
   keywords: [
     "tekne CE belgesi",
     "CE belgelendirme",
     "gezi teknesi CE",
     "2013/53/AB",
-    "IFC Global",
+    "Notified Body",
     "tekne ihracat",
+    "AB direktifi",
   ],
-  authors: [{ name: "IFC Global Teknik Ekibi" }],
+  authors: [{ name: "cetekne.com Teknik Ekibi" }],
   openGraph: {
     type: "website",
     locale: "tr_TR",
@@ -40,13 +41,13 @@ export const metadata: Metadata = {
     siteName: "cetekne.com",
     title: "Tekne CE Belgesi | cetekne.com",
     description:
-      "24 metre altı gezi tekneleri için CE belgesi hizmeti. IFC Global ortağı olarak teknenizin AB pazarına uygunluk belgelendirmesini sağlıyoruz.",
+      "24 metre altı gezi tekneleri için CE belgesi hizmeti. AB yetkili Notified Body ile 2013/53/AB Direktifi kapsamında belgelendirme.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Tekne CE Belgesi | cetekne.com",
     description:
-      "24 metre altı gezi tekneleri için CE belgesi hizmeti. IFC Global ortağı.",
+      "24 metre altı gezi tekneleri için CE belgesi hizmeti. AB yetkili Notified Body.",
   },
   alternates: {
     canonical: siteUrl,

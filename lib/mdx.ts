@@ -44,7 +44,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
     updatedAt: data.updatedAt || data.publishedAt || "",
     readingTime: data.readingTime || 5,
     keywords: data.keywords || [],
-    author: data.author || "IFC Global Teknik Ekibi",
+    author: data.author || "cetekne.com Teknik Ekibi",
     content,
   };
 }

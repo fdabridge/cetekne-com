@@ -19,8 +19,8 @@ const previewFaqs = [
     a: "Maliyet tekne tipine, boyutuna ve mevcut dokümantasyon durumuna göre değişir. Detaylı fiyat bilgisi için bizimle iletişime geçin.",
   },
   {
-    q: "IFC Global nedir?",
-    a: "IFC Global, uluslararası akreditasyona sahip bir uygunluk değerlendirme kuruluşudur. Tekne CE belgelendirmesinde Notified Body olarak hizmet vermektedir.",
+    q: "Notified Body nedir ve neden önemlidir?",
+    a: "Notified Body, Avrupa Birliği tarafından 2013/53/AB Direktifi kapsamında yetkilendirilmiş bağımsız uygunluk değerlendirme kuruluşudur. CE belgesi ancak yetkili bir Notified Body aracılığıyla alınabilir.",
   },
 ];
 
