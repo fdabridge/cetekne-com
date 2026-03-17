@@ -1,0 +1,102 @@
+---
+slug: stabilite-hesaplamalari-rehberi
+title: "Tekne Stabilite Hesaplamaları: CE Belgesi İçin Kapsamlı Rehber"
+description: ISO 12217 standardına göre tekne stabilite hesaplamaları nasıl yapılır? CE belgesi için zorunlu olan stabilite analizi sürecini öğrenin.
+category: teknik
+publishedAt: "2025-02-01"
+updatedAt: "2025-02-01"
+readingTime: 10
+keywords: ["tekne stabilite hesabı", "ISO 12217", "CE belgesi stabilite", "stabilite analizi", "tekne güvenliği"]
+author: IFC Global Teknik Ekibi
+---
+
+## Stabilite Neden Bu Kadar Önemli?
+
+Tekne stabilitesi, can güvenliğinin temel taşlarından biridir. Bir teknenin alabora olmadan denizde kalabilme kapasitesini belirleyen stabilite özellikleri; tasarım kategorisini, izin verilen yolcu sayısını ve güvenli kullanım koşullarını doğrudan etkiler.
+
+2013/53/AB Direktifi kapsamında CE belgesi almak için teknenizin **ISO 12217** standardına göre stabilite değerlendirmesinden geçmesi zorunludur.
+
+## ISO 12217 Standardı
+
+ISO 12217, gezi teknelerinin stabilitesini ve yüzdürme özelliklerini değerlendiren uluslararası standarttır. İki ana bölümden oluşur:
+
+- **ISO 12217-1:** Yelkenli tekneler (≥6 m)
+- **ISO 12217-2:** Motorlu tekneler ve yelkenliler (6 m'den kısa)
+
+### Değerlendirme Kriterleri
+
+Standard, aşağıdaki kriterleri kullanarak teknenin stabilitesini değerlendirir:
+
+**GZ Eğrisi:** Belirli bir eğilme açısında tekneyi dik tutmaya çalışan kaldırma kolunun (GZ) grafiğidir. Bu eğrinin alanı ve maksimum değeri, teknenin enerji emme kapasitesini gösterir.
+
+**Dinamik Stabilite:** Teknenin bir dalgayla karşılaştığında ne kadar enerji emebileceğini ölçer. Daha büyük alan, daha güvenli tekne anlamına gelir.
+
+**Alabora Açısı:** Teknenin kendi kendine dönmeden kalabileceği maksimum eğilme açısıdır.
+
+## Stabilite Hesaplama Süreci
+
+### 1. Ağırlık ve Ağırlık Merkezi Analizi
+
+Hesaplamaların ilk adımı, teknenin tüm ağırlıklarının ve bu ağırlıkların konumlarının belirlenmesidir.
+
+- **Hafif tekne ağırlığı (LDC):** Motor dahil, yakıt ve ekipman hariç ağırlık
+- **Maksimum yükleme ağırlığı (MLD):** Mürettebat, yakıt, su ve tüm ekipman dahil ağırlık
+- **Ağırlık merkezi (G):** Tüm ağırlıkların bileşkesinin koordinatları
+
+### 2. Hidrostatik Analizler
+
+Teknenin su içindeki geometrisi, hidrostatik programlarla analiz edilir:
+
+- **Deplesman:** Teknenin yerinden ettiği su ağırlığı
+- **Metacentrik yükseklik (GM):** Başlangıç stabilitesini gösteren temel parametre
+- **Kaldırma merkezi (B):** Tekneye etki eden kaldırma kuvvetinin uygulama noktası
+- **Boyuna trim:** Teknenin baş ve kıç arasındaki eğimi
+
+### 3. GZ Eğrisinin Hesaplanması
+
+Farklı eğilme açıları için (genellikle 0° ile 180° arasında her 5° veya 10° için) GZ değerleri hesaplanır ve eğri oluşturulur. Kaliteli stabilite yazılımları (MAXSURF, DELFTship, Hydromax gibi) bu hesaplamaları otomatik olarak yapar.
+
+### 4. Standart Kriterlerinin Karşılanması
+
+ISO 12217'ye göre tekne aşağıdaki minimum kriterleri sağlamalıdır:
+
+- Maksimum GZ değeri belirli bir açıda en az X metre olmalı
+- GZ eğrisinin altındaki alan (stabilite enerjisi) minimum değerin üzerinde olmalı
+- Tasarım kategorisine göre belirlenmiş yolcu/ağırlık kriterlerini karşılamalı
+
+## Tasarım Kategorisi ve Stabilite İlişkisi
+
+Teknenin alacağı tasarım kategorisi, stabilite kriterlerini doğrudan belirler:
+
+**Kategori A (Okyanus):** En sıkı gereksinimler; şiddetli fırtına koşullarında güvenli kalabilme zorunluluğu.
+
+**Kategori B (Açık Deniz):** Kuvvetli rüzgar ve yüksek dalgalara karşı yeterli stabilite.
+
+**Kategori C (Kıyı Suları):** Orta şiddette hava koşullarına dayanım.
+
+**Kategori D (Korunaklı Sular):** Sakin sularda kullanım için minimal gereksinimler.
+
+## Sık Karşılaşılan Stabilite Sorunları
+
+### Yetersiz GM Değeri
+
+GM değerinin çok düşük olması teknenin "yumuşak" hissetmesine ve aşırı sallanmasına neden olur. Çözüm; ağırlık merkezi düşürülmesi veya tekne formunun değiştirilmesidir.
+
+### Yüksek Üst Yapı
+
+Yüksek kamaralı ve üst yapılı teknelerde rüzgar basıncı artar, stabilite bozulur. Tasarım aşamasında üst yapı ağırlıklarının minimize edilmesi önerilir.
+
+### Yanlış Balast Dağılımı
+
+Balastın kötü yerleştirilmesi, hem boyuna (trim) hem de enine (krenaj) stabiliteyi olumsuz etkiler.
+
+## Stabilite Hesabı Ne Zaman Yaptırılmalı?
+
+- **Yeni üretim teknelerde:** Tasarım aşamasında (erken müdahale maliyeti düşürür)
+- **Mevcut teknelerde:** CE başvurusundan önce
+- **Büyük modifikasyon sonrasında:** Üst yapı eklemesi, balast değişikliği vb. durumlarda
+
+## Sonuç
+
+Stabilite hesaplamaları, hem CE belgelendirmesi hem de tekne güvenliği açısından kritik öneme sahiptir. Deneyimli deniz mühendislerinin ISO 12217 çerçevesinde yaptığı kapsamlı analizler, teknenizin hem yasal gereksinimleri karşılamasını hem de güvenle kullanılmasını sağlar. IFC Global ekibimiz bu süreçte size en güncel yazılım araçları ve uzman deneyimiyle destek olmaktadır.
+
