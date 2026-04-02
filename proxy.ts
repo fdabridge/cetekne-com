@@ -7,43 +7,33 @@ const ROOT_DOMAIN = "cetekne.com";
 const locationSlugs = new Set(locations.map((l) => l.slug));
 
 export function proxy(request: NextRequest) {
-  // ✅ FIX: read the HOST header — this is what Vercel passes for the
-  // original incoming request (e.g. "istanbul.cetekne.com").
-  // request.nextUrl.hostname is the *internal* Next.js URL and never
-  // contains the subdomain.
   const rawHost = request.headers.get("host") ?? "";
-
-  // Strip port in case of local overrides (e.g. "istanbul.cetekne.com:3000")
+  // Strip port (e.g. "cetekne.com:3000" → "cetekne.com")
   const hostname = rawHost.split(":")[0].toLowerCase();
 
-  // Debug — visible in Vercel Function logs
-  console.log("[proxy] host:", rawHost, "→ hostname:", hostname);
+  console.log("[proxy] hostname:", hostname);
 
-  // Skip local dev and Vercel preview deployments
+  // ── Passthrough: never redirect these hosts ──────────────────────────────
+  // Redirecting www or the root domain here causes infinite loops because
+  // Vercel's own infrastructure may re-route the request back through proxy.
+  // www → naked canonicalisation is handled in the Vercel dashboard instead.
   if (
+    hostname === ROOT_DOMAIN ||           // cetekne.com
+    hostname === `www.${ROOT_DOMAIN}` ||  // www.cetekne.com
     hostname === "localhost" ||
     hostname.endsWith(".localhost") ||
-    hostname.endsWith(".vercel.app")
+    hostname.includes(".vercel.app")      // *.vercel.app preview deployments
   ) {
     return NextResponse.next();
   }
 
-  // www → root (301)
-  if (hostname === `www.${ROOT_DOMAIN}`) {
-    return NextResponse.redirect(
-      `https://${ROOT_DOMAIN}${request.nextUrl.pathname}`,
-      { status: 301 }
-    );
-  }
-
-  // Subdomain detection: istanbul.cetekne.com → cetekne.com/istanbul-ce-belgesi
+  // ── Subdomain redirect ───────────────────────────────────────────────────
+  // istanbul.cetekne.com  →  https://cetekne.com/istanbul-ce-belgesi (301)
   if (hostname.endsWith(`.${ROOT_DOMAIN}`)) {
-    // e.g. "istanbul.cetekne.com" → "istanbul"
     const subdomain = hostname.slice(0, hostname.length - ROOT_DOMAIN.length - 1);
 
-    console.log("[proxy] subdomain:", subdomain, "| known location:", locationSlugs.has(subdomain));
+    console.log("[proxy] subdomain:", subdomain, "| known:", locationSlugs.has(subdomain));
 
-    // Only redirect for slugs that actually exist as location pages
     if (locationSlugs.has(subdomain)) {
       return NextResponse.redirect(
         `https://${ROOT_DOMAIN}/${subdomain}-ce-belgesi`,
