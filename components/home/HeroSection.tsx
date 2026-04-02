@@ -29,10 +29,14 @@ export function HeroSection() {
               <Button href="/iletisim" size="lg">
                 Hemen Başvur
               </Button>
-              <Button href="/ce-belgesi" variant="outline" size="lg">
-                Süreci Öğren
+              <Button href="mailto:bilgi@cetekne.com" variant="outline" size="lg">
+                bilgi@cetekne.com
               </Button>
             </div>
+            <p className="mt-3 text-sm text-text-muted">
+              Ya da{" "}
+              <a href="/ce-belgesi" className="underline hover:text-text-primary">süreci öğrenin →</a>
+            </p>
           </div>
 
           {/* Right: Trust badges */}

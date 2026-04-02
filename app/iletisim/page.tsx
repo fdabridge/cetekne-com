@@ -43,7 +43,9 @@ export default function IletisimPage() {
         <Container>
           <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">İletişim</h1>
           <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
-            CE belgelendirme süreciniz hakkında bilgi almak için formu doldurun. Ekibimiz 24 saat içinde sizinle iletişime geçecektir.
+            CE belgelendirme süreciniz hakkında bilgi almak için formu doldurun veya doğrudan{" "}
+            <a href="mailto:bilgi@cetekne.com" className="text-accent font-medium hover:underline">bilgi@cetekne.com</a>{" "}
+            adresine e-posta gönderin. Ekibimiz 24 saat içinde sizinle iletişime geçecektir.
           </p>
         </Container>
       </section>
@@ -99,7 +101,8 @@ export default function IletisimPage() {
                   <Mail size={20} className="mt-0.5 shrink-0 text-accent" />
                   <div>
                     <h3 className="text-sm font-semibold text-text-primary">E-posta</h3>
-                    <p className="mt-1 text-sm text-text-muted">info@cetekne.com</p>
+                    <a href="mailto:bilgi@cetekne.com" className="mt-1 block text-sm text-text-muted hover:text-accent transition-colors">bilgi@cetekne.com</a>
+                    <p className="mt-1 text-xs text-text-muted">Sorularınız için bize yazın, 24 saat içinde dönelim.</p>
                   </div>
                 </div>
               </Card>

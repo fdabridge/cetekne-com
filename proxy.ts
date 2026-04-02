@@ -1,12 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
+import { locations } from "@/lib/locations";
 
 const ROOT_DOMAIN = "cetekne.com";
-const WWW_DOMAIN = `www.${ROOT_DOMAIN}`;
+
+// Build a Set of valid slugs once at module load — O(1) lookup
+const locationSlugs = new Set(locations.map((l) => l.slug));
 
 export function proxy(request: NextRequest) {
-  const { hostname, pathname } = request.nextUrl;
+  // ✅ FIX: read the HOST header — this is what Vercel passes for the
+  // original incoming request (e.g. "istanbul.cetekne.com").
+  // request.nextUrl.hostname is the *internal* Next.js URL and never
+  // contains the subdomain.
+  const rawHost = request.headers.get("host") ?? "";
 
-  // localhost veya production dışı ortamları atla
+  // Strip port in case of local overrides (e.g. "istanbul.cetekne.com:3000")
+  const hostname = rawHost.split(":")[0].toLowerCase();
+
+  // Debug — visible in Vercel Function logs
+  console.log("[proxy] host:", rawHost, "→ hostname:", hostname);
+
+  // Skip local dev and Vercel preview deployments
   if (
     hostname === "localhost" ||
     hostname.endsWith(".localhost") ||
@@ -15,23 +28,27 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // www → root yönlendirmesi (ör. www.cetekne.com → cetekne.com)
-  if (hostname === WWW_DOMAIN) {
-    const url = request.nextUrl.clone();
-    url.hostname = ROOT_DOMAIN;
-    return NextResponse.redirect(url, { status: 301 });
+  // www → root (301)
+  if (hostname === `www.${ROOT_DOMAIN}`) {
+    return NextResponse.redirect(
+      `https://${ROOT_DOMAIN}${request.nextUrl.pathname}`,
+      { status: 301 }
+    );
   }
 
-  // Subdomain tespiti: city.cetekne.com → cetekne.com/city-ce-belgesi
+  // Subdomain detection: istanbul.cetekne.com → cetekne.com/istanbul-ce-belgesi
   if (hostname.endsWith(`.${ROOT_DOMAIN}`)) {
-    const subdomain = hostname.replace(`.${ROOT_DOMAIN}`, "");
+    // e.g. "istanbul.cetekne.com" → "istanbul"
+    const subdomain = hostname.slice(0, hostname.length - ROOT_DOMAIN.length - 1);
 
-    // Geçerli bir subdomain mi? (kısa, Latin harfli, tire içerebilir)
-    if (/^[a-z0-9-]{2,50}$/.test(subdomain)) {
-      const targetUrl = request.nextUrl.clone();
-      targetUrl.hostname = ROOT_DOMAIN;
-      targetUrl.pathname = `/${subdomain}-ce-belgesi`;
-      return NextResponse.redirect(targetUrl, { status: 301 });
+    console.log("[proxy] subdomain:", subdomain, "| known location:", locationSlugs.has(subdomain));
+
+    // Only redirect for slugs that actually exist as location pages
+    if (locationSlugs.has(subdomain)) {
+      return NextResponse.redirect(
+        `https://${ROOT_DOMAIN}/${subdomain}-ce-belgesi`,
+        { status: 301 }
+      );
     }
   }
 
@@ -39,7 +56,6 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  // API rotaları, statik dosyalar ve Next.js iç yollarını atla
   matcher: [
     "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)",
   ],

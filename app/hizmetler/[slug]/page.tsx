@@ -97,9 +97,14 @@ export default async function ServiceDetailPage({ params }: Props) {
         <Container>
           <h2 className="text-2xl font-bold sm:text-3xl">{service.shortTitle} Hizmeti İçin Başvurun</h2>
           <p className="mx-auto mt-3 max-w-lg text-white/80">Uzman ekibimiz tekneniz için en uygun çözümü sunacaktır.</p>
-          <Button href="/iletisim" variant="outline" size="lg" className="mt-6 border-white text-white hover:bg-white hover:text-primary">
-            İletişime Geçin
-          </Button>
+          <div className="mt-6 flex flex-wrap gap-4 justify-center">
+            <Button href="/iletisim" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary">
+              İletişime Geçin
+            </Button>
+            <Button href="mailto:bilgi@cetekne.com" variant="outline" size="lg" className="border-white/50 text-white/90 hover:bg-white/10">
+              bilgi@cetekne.com
+            </Button>
+          </div>
         </Container>
       </section>
     </>

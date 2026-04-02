@@ -219,8 +219,8 @@ export default async function CityPage({ params }: Props) {
               <Button href={`/iletisim?konum=${loc.slug}`} size="lg" className="bg-white text-primary hover:bg-white/90">
                 Ücretsiz Danışmanlık Al
               </Button>
-              <Button href="/hizmetler" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
-                Tüm Hizmetlerimiz
+              <Button href="mailto:bilgi@cetekne.com" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+                bilgi@cetekne.com
               </Button>
             </div>
           </div>

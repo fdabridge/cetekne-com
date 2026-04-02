@@ -82,7 +82,7 @@ export function Footer() {
               İletişim
             </h4>
             <ul className="space-y-2 text-sm text-white/70">
-              <li>info@cetekne.com</li>
+              <li><a href="mailto:bilgi@cetekne.com" className="hover:text-white transition-colors">bilgi@cetekne.com</a></li>
               <li><a href="tel:+905079413909" className="hover:text-white transition-colors">+90 507 941 39 09</a></li>
               <li>İzmir, Türkiye</li>
             </ul>

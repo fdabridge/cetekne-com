@@ -27,9 +27,11 @@ export function OrganizationJsonLd() {
           addressLocality: "İzmir",
           addressCountry: "TR",
         },
+        email: "bilgi@cetekne.com",
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+90-507-941-3909",
+          email: "bilgi@cetekne.com",
           contactType: "customer service",
           availableLanguage: "Turkish",
         },
