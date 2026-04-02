@@ -216,7 +216,7 @@ export default async function CityPage({ params }: Props) {
               cetekne.com uzman ekibi {loc.name}&apos;daki tekne sahiplerine 2013/53/AB kapsamında eksiksiz CE belgelendirme hizmeti sunmaktadır.
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
-              <Button href={`/iletisim?konum=${loc.slug}`} size="lg" className="bg-white text-primary hover:bg-white/90">
+              <Button href={`/iletisim?konum=${loc.slug}`} size="lg" className="!bg-white !text-primary hover:!bg-white/90">
                 Ücretsiz Danışmanlık Al
               </Button>
               <Button href="mailto:bilgi@cetekne.com" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
