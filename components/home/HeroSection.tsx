@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { Shield, Award, Clock, FileCheck } from "lucide-react";
+import { Shield, Award, Clock, FileCheck, Phone } from "lucide-react";
 
 const trustItems = [
   { icon: Shield, label: "AB Yetkili Notified Body" },
@@ -10,7 +10,7 @@ const trustItems = [
 ];
 
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1490077476659-095159692ab5?auto=format&fit=crop&w=1920&q=80";
+  "https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=1920&q=80";
 
 export function HeroSection() {
   return (
@@ -39,6 +39,14 @@ export function HeroSection() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Button href="/iletisim" size="lg">
                 Hemen Başvur
+              </Button>
+              <Button
+                href="tel:+908503044500"
+                size="lg"
+                className="!bg-white !text-primary hover:!bg-white/90 gap-2"
+              >
+                <Phone size={16} />
+                Hemen Ara
               </Button>
               <Button
                 href="mailto:bilgi@cetekne.com"

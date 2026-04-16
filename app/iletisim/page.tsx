@@ -42,7 +42,7 @@ export default function IletisimPage() {
       <section className="relative overflow-hidden min-h-[380px] flex items-center py-16 sm:py-20">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80')" }}
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=1920&q=80')" }}
         />
         <div className="absolute inset-0 bg-primary/80" />
         <Container className="relative z-10">
@@ -116,7 +116,7 @@ export default function IletisimPage() {
                   <Phone size={20} className="mt-0.5 shrink-0 text-accent" />
                   <div>
                     <h3 className="text-sm font-semibold text-text-primary">Telefon</h3>
-                    <a href="tel:+905079413909" className="mt-1 text-sm text-text-muted hover:text-accent">+90 507 941 39 09</a>
+                    <a href="tel:+908503044500" className="mt-1 inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:underline">+90 850 304 45 00</a>
                   </div>
                 </div>
               </Card>

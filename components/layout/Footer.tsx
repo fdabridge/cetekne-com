@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
+import { Phone } from "lucide-react";
 
 const footerLinks = {
   hizmetler: [
@@ -81,9 +82,14 @@ export function Footer() {
             <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-white/50">
               İletişim
             </h4>
-            <ul className="space-y-2 text-sm text-white/70">
+            <ul className="space-y-3 text-sm text-white/70">
+              <li>
+                <a href="tel:+908503044500" className="flex items-center gap-2 rounded-lg bg-accent px-4 py-2.5 font-semibold text-white transition-colors hover:bg-accent/90">
+                  <Phone size={15} />
+                  Hemen Ara — +90 850 304 45 00
+                </a>
+              </li>
               <li><a href="mailto:bilgi@cetekne.com" className="hover:text-white transition-colors">bilgi@cetekne.com</a></li>
-              <li><a href="tel:+905079413909" className="hover:text-white transition-colors">+90 507 941 39 09</a></li>
               <li>İzmir, Türkiye</li>
             </ul>
           </div>

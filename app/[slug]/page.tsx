@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { BreadcrumbJsonLd, FAQPageJsonLd } from "@/components/seo/JsonLd";
 import { locations, getLocationBySlug } from "@/lib/locations";
-import { CheckCircle, MapPin, Ship, FileCheck, Clock, Shield } from "lucide-react";
+import { CheckCircle, MapPin, Ship, FileCheck, Clock, Shield, Phone } from "lucide-react";
 
 const REGION_IMAGES: Record<string, string> = {
   Karadeniz:
@@ -12,7 +12,7 @@ const REGION_IMAGES: Record<string, string> = {
   Akdeniz:
     "https://images.unsplash.com/photo-1504683284782-2ac99a5d5082?auto=format&fit=crop&w=1920&q=80",
   _default:
-    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=1920&q=80",
 };
 
 function getRegionImage(region: string) {
@@ -243,6 +243,10 @@ export default async function CityPage({ params }: Props) {
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
               <Button href={`/iletisim?konum=${loc.slug}`} size="lg" className="!bg-white !text-primary hover:!bg-white/90">
                 Ücretsiz Danışmanlık Al
+              </Button>
+              <Button href="tel:+908503044500" size="lg" className="!bg-accent text-white hover:!bg-accent/90 gap-2">
+                <Phone size={16} />
+                Hemen Ara
               </Button>
               <Button href="mailto:bilgi@cetekne.com" variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
                 bilgi@cetekne.com

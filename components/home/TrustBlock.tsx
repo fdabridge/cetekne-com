@@ -33,7 +33,7 @@ export function TrustBlock() {
     <section className="relative overflow-hidden py-16 sm:py-20">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1920&q=80')" }}
       />
       <div className="absolute inset-0 bg-primary/85" />
       <Container size="wide" className="relative z-10">

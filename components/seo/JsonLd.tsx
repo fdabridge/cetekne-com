@@ -30,7 +30,7 @@ export function OrganizationJsonLd() {
         email: "bilgi@cetekne.com",
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+90-507-941-3909",
+          telephone: "+90-850-304-4500",
           email: "bilgi@cetekne.com",
           contactType: "customer service",
           availableLanguage: "Turkish",
