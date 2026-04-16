@@ -10,7 +10,7 @@ const trustItems = [
 ];
 
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80";
+  "https://images.unsplash.com/photo-1490077476659-095159692ab5?auto=format&fit=crop&w=1920&q=80";
 
 export function HeroSection() {
   return (

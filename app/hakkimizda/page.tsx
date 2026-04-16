@@ -33,10 +33,15 @@ export default function HakkimizdaPage() {
         { name: "Hakkımızda", url: "https://cetekne.com/hakkimizda" },
       ]} />
 
-      <section className="bg-white py-16 sm:py-20">
-        <Container>
-          <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Hakkımızda</h1>
-          <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
+      <section className="relative overflow-hidden min-h-[420px] flex items-center py-16 sm:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559128010-7c1ad6e1d6a3?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/80" />
+        <Container className="relative z-10">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Hakkımızda</h1>
+          <p className="mt-4 max-w-2xl text-lg text-white/75 leading-relaxed">
             Avrupa Birliği tarafından yetkilendirilmiş Notified Body ile iş birliği yapan CE belgelendirme uzmanlarıyız.
             24 metre altı gezi tekneleri için 2013/53/AB Direktifi kapsamında kapsamlı belgelendirme hizmetleri sunuyoruz.
             Uzman mühendis kadromuz ve uluslararası deneyimimizle teknenizin AB pazarına uygunluğunu sağlıyoruz.

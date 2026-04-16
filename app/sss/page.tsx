@@ -57,10 +57,15 @@ export default function SSSPage() {
       ]} />
       <FAQPageJsonLd questions={allFaqs} />
 
-      <section className="bg-white py-16 sm:py-20">
-        <Container>
-          <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">Sık Sorulan Sorular</h1>
-          <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
+      <section className="relative overflow-hidden min-h-[380px] flex items-center py-16 sm:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/80" />
+        <Container className="relative z-10">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Sık Sorulan Sorular</h1>
+          <p className="mt-4 max-w-2xl text-lg text-white/75 leading-relaxed">
             CE belgelendirme süreci hakkında merak ettiğiniz her şey.
           </p>
         </Container>
