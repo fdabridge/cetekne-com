@@ -36,7 +36,7 @@ export default function HakkimizdaPage() {
       <section className="relative overflow-hidden min-h-[420px] flex items-center py-16 sm:py-20">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559128010-7c1ad6e1d6a3?auto=format&fit=crop&w=1920&q=80')" }}
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80')" }}
         />
         <div className="absolute inset-0 bg-primary/80" />
         <Container className="relative z-10">
