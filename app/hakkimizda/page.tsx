@@ -50,8 +50,13 @@ export default function HakkimizdaPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-primary py-12">
-        <Container size="wide">
+      <section className="relative overflow-hidden py-12">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
+        <Container size="wide" className="relative z-10">
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center text-white">
@@ -82,10 +87,15 @@ export default function HakkimizdaPage() {
       </section>
 
       {/* Notified Body */}
-      <section className="bg-white py-16 sm:py-20">
-        <Container>
-          <h2 className="text-2xl font-bold text-text-primary sm:text-3xl">AB Yetkili Notified Body</h2>
-          <p className="mt-4 max-w-2xl text-text-muted leading-relaxed">
+      <section className="relative overflow-hidden py-16 sm:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
+        <Container className="relative z-10">
+          <h2 className="text-2xl font-bold text-white sm:text-3xl">AB Yetkili Notified Body</h2>
+          <p className="mt-4 max-w-2xl text-white/75 leading-relaxed">
             Notified Body, Avrupa Birliği tarafından 2013/53/AB Gezi Tekneleri Direktifi kapsamında yetkilendirilmiş
             bağımsız uygunluk değerlendirme kuruluşudur. CE belgesi yalnızca AB yetkili bir Notified Body aracılığıyla
             alınabilir. Biz, AB yetkili Notified Body ile doğrudan çalışarak müşterilerimize güvenilir ve AB pazarında

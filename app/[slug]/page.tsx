@@ -226,8 +226,13 @@ export default async function CityPage({ params }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-14 sm:py-16">
-        <Container>
+      <section className="relative overflow-hidden py-14 sm:py-16">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
+        <Container className="relative z-10">
           <div className="text-center">
             <h2 className="text-2xl font-bold text-white sm:text-3xl">
               {loc.name}&apos;deki Tekneniz İçin CE Belgesi Alın

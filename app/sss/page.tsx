@@ -94,8 +94,13 @@ export default function SSSPage() {
         </Container>
       </section>
 
-      <section className="bg-primary py-16 text-center text-white">
-        <Container>
+      <section className="relative overflow-hidden py-16 text-center text-white">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
+        <Container className="relative z-10">
           <h2 className="text-2xl font-bold sm:text-3xl">Sorunuz mu Var?</h2>
           <p className="mx-auto mt-3 max-w-lg text-white/80">Burada cevabını bulamadığınız sorularınız için bizimle iletişime geçin.</p>
           <Button href="/iletisim" variant="outline" size="lg" className="mt-6 border-white text-white hover:bg-white hover:text-primary">

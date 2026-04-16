@@ -30,10 +30,15 @@ const trustItems = [
 
 export function TrustBlock() {
   return (
-    <section className="bg-surface py-16 sm:py-20">
-      <Container size="wide">
+    <section className="relative overflow-hidden py-16 sm:py-20">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80')" }}
+      />
+      <div className="absolute inset-0 bg-primary/85" />
+      <Container size="wide" className="relative z-10">
         <div className="mb-10 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-text-muted">
+          <p className="text-xs font-semibold uppercase tracking-widest text-white/60">
             Neden Bizi Tercih Etmelisiniz?
           </p>
         </div>
@@ -41,18 +46,18 @@ export function TrustBlock() {
           {trustItems.map((item) => (
             <div
               key={item.label}
-              className="rounded-xl border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+              className="rounded-xl border border-white/15 bg-white/10 backdrop-blur-sm p-6 transition-colors hover:bg-white/15"
             >
               <div className="mb-4 flex items-center justify-between">
-                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/5">
-                  <item.icon size={22} className="text-primary" strokeWidth={1.75} />
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/10">
+                  <item.icon size={22} className="text-accent" strokeWidth={1.75} />
                 </div>
-                <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+                <span className="rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold text-accent">
                   {item.stat}
                 </span>
               </div>
-              <h3 className="text-base font-semibold text-text-primary">{item.label}</h3>
-              <p className="mt-2 text-sm text-text-muted leading-relaxed">
+              <h3 className="text-base font-semibold text-white">{item.label}</h3>
+              <p className="mt-2 text-sm text-white/65 leading-relaxed">
                 {item.description}
               </p>
             </div>

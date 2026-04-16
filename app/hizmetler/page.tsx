@@ -62,8 +62,13 @@ export default function HizmetlerPage() {
         </Container>
       </section>
 
-      <section className="bg-primary py-16 text-center text-white">
-        <Container>
+      <section className="relative overflow-hidden py-16 text-center text-white">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1566438480900-0609be27a4be?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
+        <Container className="relative z-10">
           <h2 className="text-2xl font-bold sm:text-3xl">Hangi Hizmete İhtiyacınız Var?</h2>
           <p className="mx-auto mt-3 max-w-lg text-white/80">Teknenizin durumuna göre en uygun CE belgelendirme hizmetini birlikte belirleyelim.</p>
           <Button href="/iletisim" variant="outline" size="lg" className="mt-6 border-white text-white hover:bg-white hover:text-primary">

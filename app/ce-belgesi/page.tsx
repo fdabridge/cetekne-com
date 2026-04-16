@@ -116,8 +116,13 @@ export default function CEBelgesiPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-primary py-16 text-center text-white">
-        <Container>
+      <section className="relative overflow-hidden py-16 text-center text-white">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504683284782-2ac99a5d5082?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/85" />
+        <Container className="relative z-10">
           <h2 className="text-2xl font-bold sm:text-3xl">CE Belgesi Almak İçin Hemen Başvurun</h2>
           <p className="mx-auto mt-3 max-w-lg text-white/80">Ekibimiz 24 saat içinde sizinle iletişime geçecek ve süreç hakkında detaylı bilgi verecektir.</p>
           <div className="mt-6 flex flex-wrap gap-4 justify-center">
