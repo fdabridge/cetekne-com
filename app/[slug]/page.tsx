@@ -6,6 +6,19 @@ import { BreadcrumbJsonLd, FAQPageJsonLd } from "@/components/seo/JsonLd";
 import { locations, getLocationBySlug } from "@/lib/locations";
 import { CheckCircle, MapPin, Ship, FileCheck, Clock, Shield } from "lucide-react";
 
+const REGION_IMAGES: Record<string, string> = {
+  Karadeniz:
+    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?auto=format&fit=crop&w=1920&q=80",
+  Akdeniz:
+    "https://images.unsplash.com/photo-1504683284782-2ac99a5d5082?auto=format&fit=crop&w=1920&q=80",
+  _default:
+    "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80",
+};
+
+function getRegionImage(region: string) {
+  return REGION_IMAGES[region] ?? REGION_IMAGES._default;
+}
+
 type Props = { params: Promise<{ slug: string }> };
 
 export const dynamicParams = false;
@@ -104,8 +117,15 @@ export default async function CityPage({ params }: Props) {
       <FAQPageJsonLd questions={faqs.map((f) => ({ question: f.question, answer: f.answer }))} />
 
       {/* Hero */}
-      <section className="bg-primary py-16 sm:py-20">
-        <Container>
+      <section className="relative overflow-hidden min-h-[480px] flex items-center py-16 sm:py-20">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('${getRegionImage(loc.region)}')` }}
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-primary/80" />
+        <Container className="relative z-10">
           <div className="flex items-center gap-2 text-sm text-white/60 mb-4">
             <MapPin size={14} />
             <span>{loc.region} · {loc.name}</span>

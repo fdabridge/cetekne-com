@@ -39,10 +39,15 @@ export default function IletisimPage() {
 
   return (
     <>
-      <section className="bg-white py-16 sm:py-20">
-        <Container>
-          <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">İletişim</h1>
-          <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
+      <section className="relative overflow-hidden min-h-[380px] flex items-center py-16 sm:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/80" />
+        <Container className="relative z-10">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">İletişim</h1>
+          <p className="mt-4 max-w-2xl text-lg text-white/75 leading-relaxed">
             CE belgelendirme süreciniz hakkında bilgi almak için formu doldurun veya doğrudan{" "}
             <a href="mailto:bilgi@cetekne.com" className="text-accent font-medium hover:underline">bilgi@cetekne.com</a>{" "}
             adresine e-posta gönderin. Ekibimiz 24 saat içinde sizinle iletişime geçecektir.

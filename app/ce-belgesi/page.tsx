@@ -35,19 +35,24 @@ export default function CEBelgesiPage() {
       <FAQPageJsonLd questions={ceFaqs} />
 
       {/* Hero */}
-      <section className="bg-white py-16 sm:py-20">
-        <Container>
-          <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl lg:text-5xl">
+      <section className="relative overflow-hidden min-h-[440px] flex items-center py-16 sm:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/80" />
+        <Container className="relative z-10">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
             CE Belgesi Nedir?
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
+          <p className="mt-4 max-w-2xl text-lg text-white/75 leading-relaxed">
             CE işareti, teknenizin 2013/53/AB Gezi Tekneleri Direktifi&apos;ne uygun olduğunu
             kanıtlayan zorunlu bir uygunluk belgesidir. AB pazarında tekne satışı ve
             Türkiye&apos;den ihracat için yasal olarak gereklidir.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="/iletisim" size="lg">Hemen Başvur</Button>
-            <Button href="/hizmetler" variant="outline" size="lg">Hizmetlerimiz</Button>
+            <Button href="/hizmetler" variant="outline" size="lg" className="border-white/40 text-white hover:bg-white/10">Hizmetlerimiz</Button>
           </div>
         </Container>
       </section>

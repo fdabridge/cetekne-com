@@ -26,12 +26,17 @@ export default function HizmetlerPage() {
         { name: "Hizmetler", url: "https://cetekne.com/hizmetler" },
       ]} />
 
-      <section className="bg-white py-16 sm:py-20">
-        <Container size="wide">
-          <h1 className="text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">
+      <section className="relative overflow-hidden min-h-[400px] flex items-center py-16 sm:py-20">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1920&q=80')" }}
+        />
+        <div className="absolute inset-0 bg-primary/80" />
+        <Container size="wide" className="relative z-10">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             CE Belgelendirme Hizmetlerimiz
           </h1>
-          <p className="mt-4 max-w-2xl text-lg text-text-muted leading-relaxed">
+          <p className="mt-4 max-w-2xl text-lg text-white/75 leading-relaxed">
             Avrupa Birliği yetkili Notified Body ile 2013/53/AB Direktifi kapsamında 24 metre altı gezi tekneleri için kapsamlı CE belgelendirme hizmetleri sunuyoruz.
           </p>
         </Container>
